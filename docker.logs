@@ -1,0 +1,132 @@
+#1 [internal] load build definition from Dockerfile
+#1 sha256:def25554000227bcaf0f91e23dcaef0cbbfa78df3926b5df479dd9840ddbecfa
+#1 transferring dockerfile: 85B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:5515a0b3c794876df92af6a16b9f824a37a389c25e8a2cf8de2049fc76936ec3
+#2 transferring context: 83B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.6
+#3 sha256:cd33b0b12236471fabb382e36fefe248ca8f77711cd924add1de91a69d22c89b
+#3 DONE 1.1s
+
+#4 [1/4] FROM docker.io/library/python:3.6@sha256:f8652afaf88c25f0d22354d547d892591067aa4026a7fa9a6819df9f300af6fc
+#4 sha256:ffc214c5d299f79a0cddadd9c1e6b7dea39e3ff14c70c5be96f1c0798159f257
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:f3b3789b6ef4e74bd816af0d84f0ae5585e988380cca2249a708497433f20122
+#6 transferring context: 16.17kB 0.0s done
+#6 DONE 0.0s
+
+#5 [2/4] WORKDIR /app
+#5 sha256:5070009d0a24e0fa1e3dd37a85ce29ad077249b4d9afc20c1ef4e255dff3524e
+#5 CACHED
+
+#7 [3/4] COPY . .
+#7 sha256:fbf1be7f03225ade3fdf5b4713c6cb1b069f79f9cb7faf9f5e2c42bd9327d9c5
+#7 DONE 0.0s
+
+#8 [4/4] RUN pip install -r requirements.txt
+#8 sha256:917a13385fc23ee1bc5c8009698d80e4e354f43e88d25eea18621b2db8659c68
+#8 1.023 Collecting bcrypt==3.1.4
+#8 1.105   Downloading bcrypt-3.1.4.tar.gz (42 kB)
+#8 1.373 Collecting blinker==1.4
+#8 1.388   Downloading blinker-1.4.tar.gz (111 kB)
+#8 1.581 Collecting certifi==2016.2.28
+#8 1.595   Downloading certifi-2016.2.28-py2.py3-none-any.whl (366 kB)
+#8 1.659 Collecting click==6.7
+#8 1.673   Downloading click-6.7-py2.py3-none-any.whl (71 kB)
+#8 1.720 Collecting Flask==1.0
+#8 1.748   Downloading Flask-1.0-py2.py3-none-any.whl (97 kB)
+#8 1.785 Collecting Flask-Bcrypt==0.7.1
+#8 1.799   Downloading Flask-Bcrypt-0.7.1.tar.gz (5.1 kB)
+#8 1.952 Collecting Flask-Login==0.4.1
+#8 1.967   Downloading Flask-Login-0.4.1.tar.gz (14 kB)
+#8 2.133 Collecting Flask-Mail==0.9.1
+#8 2.147   Downloading Flask-Mail-0.9.1.tar.gz (45 kB)
+#8 2.315 Collecting Flask-SQLAlchemy==2.3.2
+#8 2.329   Downloading Flask_SQLAlchemy-2.3.2-py2.py3-none-any.whl (16 kB)
+#8 2.397 Collecting Flask-WTF==0.14.2
+#8 2.413   Downloading Flask_WTF-0.14.2-py2.py3-none-any.whl (14 kB)
+#8 2.453 Collecting itsdangerous==0.24
+#8 2.467   Downloading itsdangerous-0.24.tar.gz (46 kB)
+#8 2.631 Collecting Jinja2==2.10
+#8 2.644   Downloading Jinja2-2.10-py2.py3-none-any.whl (126 kB)
+#8 2.981 Collecting Pillow==5.3.0
+#8 2.994   Downloading Pillow-5.3.0.tar.gz (15.6 MB)
+#8 3.805 Collecting pycparser==2.18
+#8 3.818   Downloading pycparser-2.18.tar.gz (245 kB)
+#8 4.005 Collecting six==1.11.0
+#8 4.020   Downloading six-1.11.0-py2.py3-none-any.whl (10 kB)
+#8 4.309 Collecting SQLAlchemy==1.2.7
+#8 4.323   Downloading SQLAlchemy-1.2.7.tar.gz (5.6 MB)
+#8 5.015 Collecting Werkzeug==0.14.1
+#8 5.030   Downloading Werkzeug-0.14.1-py2.py3-none-any.whl (322 kB)
+#8 5.071 Collecting WTForms==2.1
+#8 5.084   Downloading WTForms-2.1.zip (553 kB)
+#8 5.289 Collecting gunicorn==20.0.4
+#8 5.304   Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+#8 5.488 Collecting cffi>=1.1
+#8 5.502   Downloading cffi-1.15.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (434 kB)
+#8 5.619 Collecting MarkupSafe>=0.23
+#8 5.635   Downloading MarkupSafe-2.0.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (26 kB)
+#8 5.668 Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.6/site-packages (from gunicorn==20.0.4->-r requirements.txt (line 21)) (57.5.0)
+#8 5.683 Building wheels for collected packages: bcrypt, blinker, Flask-Bcrypt, Flask-Login, Flask-Mail, itsdangerous, Pillow, pycparser, SQLAlchemy, WTForms
+#8 5.683   Building wheel for bcrypt (setup.py): started
+#8 7.349   Building wheel for bcrypt (setup.py): finished with status 'done'
+#8 7.349   Created wheel for bcrypt: filename=bcrypt-3.1.4-cp36-cp36m-linux_aarch64.whl size=52125 sha256=0140c336a563be4be1b608c0e683d68710b1712b497fbec12d209fd6ef2445ee
+#8 7.349   Stored in directory: /root/.cache/pip/wheels/0b/09/bf/65c3c169a34138593d4130aa221333cef5a71cb46ec2448d4f
+#8 7.352   Building wheel for blinker (setup.py): started
+#8 7.493   Building wheel for blinker (setup.py): finished with status 'done'
+#8 7.493   Created wheel for blinker: filename=blinker-1.4-py3-none-any.whl size=13478 sha256=706100b653bd15ff32420cd528de36cce6d78ff055c12124adc9603c6d1133f1
+#8 7.493   Stored in directory: /root/.cache/pip/wheels/4f/4a/93/c5ed8c11fedbe97fb8b8032b301eaa736248684b44087a7259
+#8 7.495   Building wheel for Flask-Bcrypt (setup.py): started
+#8 7.630   Building wheel for Flask-Bcrypt (setup.py): finished with status 'done'
+#8 7.630   Created wheel for Flask-Bcrypt: filename=Flask_Bcrypt-0.7.1-py3-none-any.whl size=5030 sha256=c3b710c3f34e2bc354eaf55b1ec50d73f6694e88cc59e91ae79e69a0894662b1
+#8 7.630   Stored in directory: /root/.cache/pip/wheels/c9/5c/81/9da99305abd85cb148b6428bd1a8e37aff10908430b0e2474a
+#8 7.632   Building wheel for Flask-Login (setup.py): started
+#8 7.770   Building wheel for Flask-Login (setup.py): finished with status 'done'
+#8 7.771   Created wheel for Flask-Login: filename=Flask_Login-0.4.1-py2.py3-none-any.whl size=15949 sha256=87f9731111e83532a09681d2a19c50fe5040a430a5ba54742575fdd41cf62828
+#8 7.771   Stored in directory: /root/.cache/pip/wheels/db/40/67/41f90cc1fbb5ae5a444f380825ffa4fdc2fe9f56a8c694f913
+#8 7.773   Building wheel for Flask-Mail (setup.py): started
+#8 7.943   Building wheel for Flask-Mail (setup.py): finished with status 'done'
+#8 7.944   Created wheel for Flask-Mail: filename=Flask_Mail-0.9.1-py3-none-any.whl size=7579 sha256=191f3c179586640bdbca05b7cf5605e43b984722a258350ea7f70586a8462573
+#8 7.944   Stored in directory: /root/.cache/pip/wheels/fe/84/40/93d0f3db162c7d713c1b12c64e815163a22fbebe25fc6be62b
+#8 7.946   Building wheel for itsdangerous (setup.py): started
+#8 8.122   Building wheel for itsdangerous (setup.py): finished with status 'done'
+#8 8.123   Created wheel for itsdangerous: filename=itsdangerous-0.24-py3-none-any.whl size=10636 sha256=3ec42dff475c832307d5cf2a8e9d91af0435944fb4d98b68253e0afd8ab0d5d7
+#8 8.123   Stored in directory: /root/.cache/pip/wheels/87/c5/5a/ec57bae8cc6dc7933ea260ae3170fd858bec5673131c289a95
+#8 8.126   Building wheel for Pillow (setup.py): started
+#8 17.67   Building wheel for Pillow (setup.py): finished with status 'done'
+#8 17.68   Created wheel for Pillow: filename=Pillow-5.3.0-cp36-cp36m-linux_aarch64.whl size=1141903 sha256=bfab0a60efd544a43930c0b700f714ad33271158fd8eee0ebbe527d772327623
+#8 17.68   Stored in directory: /root/.cache/pip/wheels/e9/43/5c/ee8092049e2939ff4c3bfb433525b48f59b36836e3c4ec2b3b
+#8 17.68   Building wheel for pycparser (setup.py): started
+#8 17.93   Building wheel for pycparser (setup.py): finished with status 'done'
+#8 17.93   Created wheel for pycparser: filename=pycparser-2.18-py2.py3-none-any.whl size=206730 sha256=5fbb3812e5a7e21833384b1cde212e173dc6e63848652cb0053926afdafa7829
+#8 17.93   Stored in directory: /root/.cache/pip/wheels/be/ba/89/4df1a952bcd0716ac1d5f6f051233e1f3a653948f08bc0a7be
+#8 17.93   Building wheel for SQLAlchemy (setup.py): started
+#8 18.58   Building wheel for SQLAlchemy (setup.py): finished with status 'done'
+#8 18.58   Created wheel for SQLAlchemy: filename=SQLAlchemy-1.2.7-cp36-cp36m-linux_aarch64.whl size=1121957 sha256=ded70f4404c831163f894e8a0414faf513a1ec18e08d9b0f093b3eb6d80f09d5
+#8 18.58   Stored in directory: /root/.cache/pip/wheels/da/d3/ad/bc5e546dd1101a137f449207614691bbe090eac2710585e5ae
+#8 18.58   Building wheel for WTForms (setup.py): started
+#8 18.77   Building wheel for WTForms (setup.py): finished with status 'done'
+#8 18.77   Created wheel for WTForms: filename=WTForms-2.1-py2.py3-none-any.whl size=140874 sha256=9b513732b1c333af621745cd109bb3bd09f44ed84e4b14457fa86ca38fbee0c8
+#8 18.77   Stored in directory: /root/.cache/pip/wheels/21/b0/be/88c7b9fc7f5028d0aa795c13319b0a66a9f49e64f0f0a97a8f
+#8 18.77 Successfully built bcrypt blinker Flask-Bcrypt Flask-Login Flask-Mail itsdangerous Pillow pycparser SQLAlchemy WTForms
+#8 18.80 Installing collected packages: pycparser, MarkupSafe, Werkzeug, six, Jinja2, itsdangerous, click, cffi, WTForms, SQLAlchemy, Flask, blinker, bcrypt, Pillow, gunicorn, Flask-WTF, Flask-SQLAlchemy, Flask-Mail, Flask-Login, Flask-Bcrypt, certifi
+#8 19.52 Successfully installed Flask-1.0 Flask-Bcrypt-0.7.1 Flask-Login-0.4.1 Flask-Mail-0.9.1 Flask-SQLAlchemy-2.3.2 Flask-WTF-0.14.2 Jinja2-2.10 MarkupSafe-2.0.1 Pillow-5.3.0 SQLAlchemy-1.2.7 WTForms-2.1 Werkzeug-0.14.1 bcrypt-3.1.4 blinker-1.4 certifi-2016.2.28 cffi-1.15.1 click-6.7 gunicorn-20.0.4 itsdangerous-0.24 pycparser-2.18 six-1.11.0
+#8 19.52 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 19.65 WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+#8 19.65 You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+#8 DONE 19.9s
+
+#9 exporting to image
+#9 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#9 exporting layers
+#9 exporting layers 0.3s done
+#9 writing image sha256:62cdba7b0e452f150aff5066ef448125ecf1825c8d5ae1c35a907e287c6ddc42 done
+#9 naming to docker.io/library/coreyblog done
+#9 DONE 0.3s
